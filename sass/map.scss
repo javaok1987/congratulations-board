@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@import "./helpers/variables";
+@import "./helpers/mixin";
+@import "./helpers/reset";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $body-font-family;
+
+    background-color: #e5e5e5;
+}
+
+#map {
+    height: 100%;
+    canvas {
+        border: 10px solid blue;
+    }
+}
+
+.infowindow {
+    display: inline-block;
+
+    max-width: 100%;
+    margin-bottom: .1em;
+
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #004FA9;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: .3em;
+    border-image: initial;
+    background-color: rgb(66, 127, 225);
+    >div {
+        font-size: 1rem;
+
+        max-width: 100%;
+        padding: .5em;
+
+        white-space: pre-line;
+        letter-spacing: 1.5px;
+        word-wrap: break-word;
+
+        border-radius: inherit;
+
+        overflow-wrap: break-word;
+    }
+}
+
+.footer {
+    text-align: right;
+}
